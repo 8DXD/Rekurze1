@@ -10,7 +10,15 @@ long faktorial(int x) {
 	}
 }
 
-
+//Pomocí rekuez funkcí, vypočtěte počet buněk po N dnech, když za každý den se počet buněk zdvojnásobí (na začátku je jedna)
+long bunky(int x) {
+	if (x <= 1) {
+		return 1;
+	}
+	else {
+		return 2 * faktorial(x - 1);
+	}
+}
 
 int main()
 {
